@@ -11,9 +11,9 @@ int	main(int argc, char **argv)
 	Point	b(std::atof(argv[3]), std::atof(argv[4]));
 	Point	c(std::atof(argv[5]), std::atof(argv[6]));
 	Point	d(std::atof(argv[7]), std::atof(argv[8]));
-	if (bsp)
-		std::cout << "The point is inside the triangle." << std::endl;
+	if (bsp(a, b, c, d))
+		std::cout << "The point is inside." << std::endl;
 	else
-		std::cout << "The point is outside the triangle." << std::endl;
+		std::cout << "The point is outside." << std::endl;
 	return 0;
 }
